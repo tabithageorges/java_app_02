@@ -25,6 +25,7 @@ import com.crossover.trial.journals.Application;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
+
 public class CategoryRestServiceTest {
 
 	private MockMvc mockMvc;
@@ -56,3 +57,4 @@ public class CategoryRestServiceTest {
 				.andExpect(jsonPath("$[4].name", is("cardiology")));
 	}
 }
+
